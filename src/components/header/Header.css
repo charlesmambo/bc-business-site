@@ -9,17 +9,19 @@
 .intro-card {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 0.3rem;
-    height: 50vh;
+    height: 55vh;
+    margin-top: 2.5rem;
+    box-sizing: border-box;
 }
 .card-content {
-    width: 45vw;
+    width: 55vw;
     padding: 1.5rem;
 }
 
 .card-img {
     width: 26vw; 
     overflow: hidden;
-    height: 58vh;
+    height: 55vh;
     position: relative;
 }
 
@@ -134,6 +136,7 @@ margin-top: 1.3rem;
 @media only screen and (max-width: 600px) {
     .intro-container {
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .intro-container {
@@ -141,18 +144,20 @@ margin-top: 1.3rem;
         display: flex;
         /* align-items: center; */
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .intro-card {
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         border-radius: 0.3rem;
         height: fit-content;
+        margin-top:1rem;
     }
 
     .card-img {
         width: 90vw; 
         height: 50vh;
+        margin-top:2.6rem;
     }
 
     .card-content {

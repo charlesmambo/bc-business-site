@@ -8,6 +8,10 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     padding: 0.5rem 3rem;
     background-color: #183835;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2000;
 }
 .logo-container img {
     display: block;
@@ -25,7 +29,14 @@ nav {
 .nav-item-list li a {
     color: #dedede;
     letter-spacing: 1px;
+    transition: font-size 0.6s ease, color 0.6s ease;
 }
+.nav-item-list li a:hover {
+    color: #3fa2f6;
+    font-size: 0.9rem;
+}
+
+
 
 .focus {
     border-bottom: 2px solid #d4d4d4;  
