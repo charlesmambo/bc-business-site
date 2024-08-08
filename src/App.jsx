@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import Home from './home/Home';
 import About from './about/About'
 import Services from './services/Services';
+import Pricing from './pricing/Pricing';
 // import About from './components/about/About';
 // import Services from './components/services/Services';
 // import Pricing from './components/pricing/Pricing';
@@ -23,6 +24,7 @@ const App = () => {
       <Route path="/" element={<Home scrollToAbout={scrollToAbout} aboutRef={aboutRef} />} />
       <Route path="/services" element={<Services />} />
          <Route path="/about" element={<About />} />
+         <Route path="/pricing" element={<Pricing />} />
         {/* // <Route path="/services" element={<Services />} />
         // <Route path="/pricing" element={<Pricing />} />
         // <Route path="/contact" element={<Contact />} />  */}

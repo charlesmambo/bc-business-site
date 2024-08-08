@@ -1,9 +1,12 @@
 .qn-container {
-    padding: 3rem 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.main-container{
+    padding: 3rem 6rem;
+    border: 2px solid red;
 }
 
 .qn-content {
@@ -54,3 +57,27 @@
     color: #183835;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    .qn-container{
+        padding: 1rem;
+        margin-top: -2.2rem;
+    }
+    .qn-content {
+        margin-top: 1rem;
+        width: 83vw;
+    }  
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .qn-content {
+        margin-top: 1rem;
+        width: 73vw;
+    }  
+    
+    .qn-container{
+        margin-top: -2rem;
+    }
+}
+

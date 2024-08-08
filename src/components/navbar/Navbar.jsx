@@ -21,6 +21,7 @@ const Navbar = ({ scrollToAbout }) => {
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
+    closeDropdown(); // Close dropdown after clicking the link
     if (link === 'about') {
       navigate('/');
       setTimeout(scrollToAbout, 100);
