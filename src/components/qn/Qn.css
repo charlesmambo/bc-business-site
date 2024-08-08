@@ -1,0 +1,56 @@
+.qn-container {
+    padding: 3rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.qn-content {
+    margin-top: 1rem;
+    width: 45vw;
+}
+.qn-title {
+    color: #183835;
+}
+
+.qn-desc-content p {
+    padding: 0.4rem;
+    color: #5b5b5b;
+    font-size: 0.8rem;
+}
+
+.qn-desc-title h4 {
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.qn-desc-content {
+    padding: 0.5rem;
+    border-radius: 0.1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    overflow: hidden; 
+    max-height: 0; 
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease; 
+}
+.qn-desc-content.show {
+    max-height: 500px; 
+    opacity: 1; 
+}
+
+.qn-desc-title {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(95, 75, 75);
+}
+.qn-icons {
+    display: flex;
+}
+.qn-icon {
+    font-size: 1.4rem;
+    color: #183835;
+    cursor: pointer;
+}
