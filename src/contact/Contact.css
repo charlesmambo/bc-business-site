@@ -99,6 +99,7 @@ input:-webkit-autofill {
     border-radius: 0.2rem;
     transition: transform 0.3s ease-in-out;
     font-family: inherit;
+    cursor: pointer !important;
 }
 
 .form-btn button:hover {
@@ -123,10 +124,12 @@ input:-webkit-autofill {
         width: 100%;
         padding: 0.8rem 1rem; 
         font-size: 1.3rem;
+        margin-top: 0.8rem;
     }
 
     .form-btn button:hover {
         transform: none; 
+        cursor: pointer !important;
     }
     .contact-intro h2{
         font-size: 2.1rem;
@@ -151,16 +154,16 @@ input:-webkit-autofill {
     .form-control input,
 .form-control textarea{
     padding: 0.7rem 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .form-control textarea {
  height: 16vh;
- font-size: 1.3rem;
+ font-size: 1.2rem;
 }
 
 .form-control input::placeholder, 
 .form-control textarea::placeholder{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
     
   }
