@@ -77,7 +77,7 @@ const Navbar = ({ scrollToAbout }) => {
 
           <Link
             to="/contact"
-            className={`contant-link ${activeLink === 'contact' ? 'focus' : ''}`}
+            className={`contant-link ${activeLink === 'contact' ? '' : ''}`}
             onClick={() => handleLinkClick('contact')}
           >
             <div className="contant-btn">

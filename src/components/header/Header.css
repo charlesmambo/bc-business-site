@@ -191,12 +191,12 @@ margin-top: 1.3rem;
     .card-content {
         width: 98vw;
         box-sizing: border-box;
-        height: 29vh;
+        height: 35vh;
     }
 
     .card-img {
         width: 55vw; 
-        height: 29vh;
+        height: 35vh;
         box-sizing: border-box;
     }
 
