@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div className='intro-container'>
       <div className="intro-card card-content">
-        <h1>Streamline Your Finances...</h1>
+        <h1>Streamline Your Finances</h1>
         <div className="services-list">
           {services.map((service, index) => (
             <div className="service-content" key={index}>

@@ -43,7 +43,7 @@ const Services = () => {
                 <p>4</p>
             </div>
            </div>
-{/* 
+ 
            <div className="service-box">
              <h4>VAT reconciliation</h4>
              <p>Ensure VAT compliance with ease and accuracy through our specialised VAT Reconciliation Services, designed for businesses managing up to 25 transactions per month. Our tailored approach streamlines the reconciliation process, providing you with meticulous records, minimised errors, and peace of mind.</p>
@@ -58,9 +58,9 @@ const Services = () => {
              <div className="number">
                 <p>6</p>
             </div>
-           </div> */}
+           </div> 
 
-           {/* <div className="service-box">
+            <div className="service-box">
              <h4>Construction Industry Schemes (CIS) Guidance</h4>
              <p>Navigate the complexities of the Construction Industry Scheme (CIS) with confidence through our comprehensive suite of services. Whether you're a contractor, subcontractor, or construction business owner, our expert guidance, seamless submissions, and efficient payment processing ensure compliance and financial efficiency within the construction sector.</p>
              <div className="number">
@@ -74,7 +74,7 @@ const Services = () => {
              <div className="number">
                 <p>8</p>
             </div>
-           </div> */}
+           </div> 
 
 
         </div>

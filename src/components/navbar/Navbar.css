@@ -1,7 +1,7 @@
 nav {
     font-family: "Familjen Grotesk", sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +23,7 @@ nav {
 .nav  {
     display: flex;
     align-items: center;
-    gap: 2.2rem;
+    gap: 2.4rem;
 }
 
 .nav-item-list li a {
@@ -33,7 +33,7 @@ nav {
 }
 .nav-item-list li a:hover {
     color: #3fa2f6;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 

@@ -9,10 +9,10 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     background-color: #183835;
     border-radius: 0.2rem;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 .pillar-img:hover {
-    transform: scale(1.09); 
+    transform: scale(1.04); 
 }
 .pillar-img img {
    width: 100%;
@@ -27,24 +27,24 @@
 
 .abt-pillars h3 {
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.2rem; 
     margin-bottom: 1.7rem;
 }
 
 .abt-pillar-desc {
     margin-top: 0.7rem;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    padding: 0.9rem 1rem;  
+    padding: 0.9rem 1.2rem;  
     border-radius: 0.2rem;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .abt-pillar-desc:hover {
-    transform: scale(1.09); 
+    transform: scale(1.04); 
 }
 
 .abt-pillar-desc p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #5c6060;
     margin-top: 0.7rem;
 }
@@ -63,6 +63,21 @@
 
     .pillar-img {
         width: 90vw; 
+    }
+    .abt-pillar-desc {
+        margin: 1.4rem 0;
+    }
+
+    .abt-pillar-desc p {
+        font-size: 1.1rem;
+    }
+
+    .abt-pillar-desc h4 {
+        font-size: 1.2rem;  
+    }
+
+    .abt-pillars h3 {
+        font-size: 1.3rem; 
     }
     
 }
