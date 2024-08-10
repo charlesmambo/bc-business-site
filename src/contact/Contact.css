@@ -111,6 +111,7 @@ input:-webkit-autofill {
     .contact-container {
         padding: 6rem 1rem;
         flex-direction: column;
+        margin-bottom: -2.9rem;
     } 
     .contact-intro {
         width: 88vw;
@@ -123,7 +124,7 @@ input:-webkit-autofill {
     .form-btn button {
         width: 100%;
         padding: 0.8rem 1rem; 
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-top: 0.8rem;
     }
 
@@ -132,38 +133,38 @@ input:-webkit-autofill {
         cursor: pointer !important;
     }
     .contact-intro h2{
-        font-size: 2.1rem;
+        font-size: 1.3rem;
      }
 
      .contact-intro-text {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contact-details h4 {
-        font-size: 1.5rem;  
+        font-size: 1.2rem;  
     }
     
     .contact-details p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .form-control {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .form-control input,
 .form-control textarea{
     padding: 0.7rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .form-control textarea {
  height: 16vh;
- font-size: 1.2rem;
+ font-size: 1.1rem;
 }
 
 .form-control input::placeholder, 
 .form-control textarea::placeholder{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
     
   }

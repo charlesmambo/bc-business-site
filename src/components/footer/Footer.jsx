@@ -4,7 +4,7 @@ import Logo from '../../assets/logo.svg';
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
-
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -31,7 +31,7 @@ const Footer = () => {
             </li>
         </ul>
 
-        <ul className='ft'>
+        <ul className='ft ft-socials'>
             <h4>
                 Get in touch
             </h4>
@@ -39,7 +39,12 @@ const Footer = () => {
                 <a href="">Contact</a>
             </li> */}
             <li  className='ctc-links'>
-                <a href="">Request a Quote</a>
+                <a href="" className='ctc-l'>
+                <IoIosArrowDroprightCircle className='ctc-icon'/>
+                    <span className='ctc-link-text'>
+                    Request a Quote
+                    </span>
+                </a>
             </li>
         </ul>
         <ul className='footer-links ft'>

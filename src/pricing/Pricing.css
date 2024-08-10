@@ -157,10 +157,11 @@
         align-items: center;
         flex-direction: column;
     }
-    .pricing-title h3 {
-     font-size: 1.3rem;
-    }
     
+    .pricing-title h3 {
+     font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    }
     .p-card h4 ,
     .title h4{
         font-size: 1.2rem;
@@ -177,7 +178,8 @@
     .price-link {
        width: 45vw;
        font-size: 1.1rem; 
-       padding: 0.7rem 1rem
+       padding: 0.6rem 1rem;
+       font-weight: 700;
     }
 
     .p-card p {
@@ -211,12 +213,12 @@
 
     .other-services-btn {
         width: 45vw;  
-        padding: 0.8rem 1rem;
+        padding: 0.6rem 1rem;
         margin: 2rem 0;
     }
 
     .pricing-icon {
-        font-size: 3.3rem;
+        font-size: 3.2rem;
         text-align: center;
     }
     .price-link-text {

@@ -17,7 +17,7 @@ footer {
     color: #dededee1; 
     margin-top: 1rem;
     font-weight: normal;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .footer-links {
@@ -28,7 +28,7 @@ footer {
 
 .footer-links li a{
     color: #dededee1;
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: font-size 0.6s ease, color 0.6s ease;
     letter-spacing: 1px;
     font-weight: 300;
@@ -37,34 +37,39 @@ footer {
 
 .footer-links li a:hover {
     color: #3fa2f6;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 footer h4 {
-    color: #dededee1;
-    font-size: 0.9rem;
-    font-weight: 400;
-    margin-bottom: 0.4rem;
+    color: #e6e6e6e1;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
 }
 
 .ctc-links {
-    margin: 1rem 0;
+    margin: 1.2rem 0;
 }
 
 .ctc-links a {
     color: #dededee1;
-    font-size: 0.8rem; 
+    font-size: 1rem; 
     letter-spacing: 1px;
     border: 1px solid  #dededee1;
     width: 3.5rem;
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 4rem;
     transition: border-color 0.6s ease, color 0.6s ease;
+    position: relative;
 }
 
 .ctc-links a:hover {
     border: 1px solid #3fa2f6;
     color: #3fa2f6;
+}
+
+.ctc-link-text {
+    margin-left: 2rem;
 }
 
 .social-icon {
@@ -74,7 +79,14 @@ footer h4 {
 }
 
 .social-icon li a {
-   font-size: 0.9rem;
+   font-size: 1rem;
+}
+
+.ctc-icon {
+    font-size: 2.6rem;
+    position: absolute;
+    left: -0.3rem;
+    top: -0.2rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -82,13 +94,27 @@ footer h4 {
         padding: 1rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         gap: 1.5rem;
-        /* border: 2px solid rgb(72, 255, 0); */
+        align-items: center;
     }  
 
+    .footer-logo,
+   .footer-links{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-logo img {
+        width: 110px;
+        display: block;
+        margin-top: -0.7rem;
+    }
+
     .footer-logo p {
-        line-height: 1rem;
+        line-height: 1.3rem;
+        text-align: center;
+        font-size: 1.1rem;
     }
 
     footer ul {
@@ -103,8 +129,52 @@ footer h4 {
     .ft {
         width: 40vw;  
     }
+
+    .ft-socials {
+        width: 78vw;
+    }
+    .ft h4,
+    .footer-links h4 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
   
     .ft-icons {
-        width: 90vw;
+        width: 40vw;
+    }
+
+    .ft-icons h4 {
+        margin-bottom: 0.7rem;
+    }
+
+    .ctc-links {
+        margin-top: 1.4rem;
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .ctc-icon {
+        font-size: 3rem;
+        position: absolute;
+        left: -0.3rem;
+        top: -0.3rem;
+    }
+
+    .footer-links li{
+      margin: 0.2rem;
+    }
+    .social-icon li a{
+        font-size: 1.4rem;
+    }
+    .social-icon li a:hover{
+        font-size: 1.4rem;
+    }
+
+.ctc-links a {
+    display: block;
+        width: 48vw !important;
+        padding: 0.6rem 1rem;
     }
 }
