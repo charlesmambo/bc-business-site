@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 *{
   margin: 0;
@@ -9,7 +9,7 @@
 
 body {
   font-size: 1rem;
-  font-family: "Familjen Grotesk", sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: #414141;
   box-sizing: border-box;
 }

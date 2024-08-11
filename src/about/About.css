@@ -1,42 +1,45 @@
 .abt {
     padding: 1rem 6rem;
     margin-top: 2rem;
-    /* font-family: "Montserrat", sans-serif; */
 }
 
 .abt-title{
 display: flex;
 align-items: center;
+justify-content: space-between;
 gap: 1.2rem;
 }
 
 .abt-title h3 {
-    font-weight: 600;
+    font-weight: 700;
     color: #183835;
-    font-size: 1.2rem;  
+    font-size: 1.7rem;  
 }
 
 .abt-divider {
     height: 1px;
     border: none;
-    width: 90%;
+    width: 80%;
     background-color: #0d231f0a;
     display: block;
 }
 
+.abt-content {
+    margin: 1rem 0;
+}
 
 .abt-content p {
     margin: 0.5rem 0;
-    color: #4a5a6d;
-    font-size: 1rem;
-    line-height: 22px;
+    color: #183835;
+    font-size: 1.1rem;
+    line-height: 24px;
 }
 
 
 /* Pillars  */
 
 .our-pillars {
-    margin-top: 2rem;
+    margin: 2.2rem 0;
 }
 
 @media only screen and (max-width: 600px) {

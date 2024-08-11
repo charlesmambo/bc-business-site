@@ -20,10 +20,7 @@ const Footer = () => {
             <li>
                 <a href="">Home</a>
             </li>
-            <li>
-                <a href="">About</a>
-            </li>
-            <li>
+            <li className='navigate-links'>
                 <a href="">Services</a>
             </li>
             <li>
@@ -42,7 +39,7 @@ const Footer = () => {
                 <a href="" className='ctc-l'>
                 <IoIosArrowDroprightCircle className='ctc-icon'/>
                     <span className='ctc-link-text'>
-                    Request a Quote
+                    Request Quote
                     </span>
                 </a>
             </li>
@@ -54,7 +51,7 @@ const Footer = () => {
                <li>
                 <a href="">Privacy Policy</a>
             </li>
-            <li>
+            <li className='navigate-links'>
                 <a href="">Terms of Service</a>
             </li>
         </ul>

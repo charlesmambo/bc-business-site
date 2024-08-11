@@ -3,6 +3,7 @@ import '../pricing/Pricing.css';
 import { FaCheckCircle } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Footer from '../components/footer/Footer';
+import FixedBtn from '../components/fixed-btn/FixedBtn';
 
 
 const Pricing = () => {
@@ -12,8 +13,10 @@ const Pricing = () => {
      <div className="pricing-content">
         <div className="pricing-title">
             <h3>General Bookkeeping plans</h3>
+            <hr className='abt-divider  price-divider' />
         </div>
 
+        <FixedBtn />
         <div className="pricing-cards-container">
             <div className="p-card">
                 <h4>28 hours per month</h4>
@@ -137,7 +140,7 @@ const Pricing = () => {
                 </ul>
             </div>
 
-            <div className="p-card">
+            {/* <div className="p-card">
                 <h4>16 hours per month</h4>
                 <p className='price-text'>
                     <span className='highlighted'>
@@ -175,7 +178,7 @@ const Pricing = () => {
                         Expense Tracking
                     </li>
                 </ul>
-            </div>
+            </div> */}
  {/*
             <div className="p-card">
                 <h4>20 hours per month</h4>

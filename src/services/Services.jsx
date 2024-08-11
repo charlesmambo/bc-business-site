@@ -2,6 +2,7 @@ import React from 'react';
 import '../services/Services.css';
 import Qn from '../components/qn/Qn';
 import Footer from '../components/footer/Footer';
+import FixedBtn from '../components/fixed-btn/FixedBtn';
 
 const Services = () => {
   return (
@@ -11,6 +12,7 @@ const Services = () => {
         <h2>Discover our services</h2>
         <hr className='abt-divider divider' />
       </div>
+      <FixedBtn />
         <div className="services-content">
            <div className="service-box">
              <h4>Bookkeeping services - monthly retainers</h4>

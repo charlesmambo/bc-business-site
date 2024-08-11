@@ -1,21 +1,33 @@
 .pricing-container {
     padding: 6rem 6rem;
+    position: relative;
 }
 
 .pricing-cards-container{
     display: flex;
-    gap: 1rem;
-    /* flex-wrap: wrap;
-    justify-content: space-between; */
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+.pricing-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }
 .pricing-title h3 {
     font-weight: 700;
-    margin-bottom: 2rem;
+    font-size: 1.7rem; 
+    color: #183835;  
 }
+
+.price-divider {
+    width: 60%;
+    display: block;
+} 
 
 .p-card{
     background-color: #ebebeb04;
-    width: 18vw;
+    width: 24vw;
     color: #183835;
     padding: 1.2rem;
     border-radius: 0.3rem;
@@ -30,12 +42,15 @@
 
 .p-card h4 {
     margin-bottom: 0.6rem;
+    font-weight: 700;
+    font-size: 1.2rem; 
+    color: #183835;  
 }
 
 
 .p-card  p {
-    font-size: 0.78rem;
-    font-weight: 100;   
+    font-size: 1.1rem;
+    font-weight: normal;   
 }
 
 .price-text {
@@ -43,9 +58,9 @@
 }
 
 .highlighted {
-    font-weight: 700;
+    font-weight: 900;
     color: #183835;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .price-link {
@@ -56,11 +71,12 @@
     width: fit-content;
    border: 1.4px solid #183835;
    color: #183835;
-   padding: 0.35rem 0.7rem;
-   font-size: 0.8rem;
+   padding: 0.35rem 1rem;
+   font-size: 1rem;
+   font-weight: 700;
    border-radius: 2rem;
    position: relative;
-   width: 7vw;
+   width: fit-content;
    /* transition: transform 0.5s ease-in-out; */
    transition:  background-color 0.9s ease, color 0.8s ease !important;
 }
@@ -74,7 +90,7 @@
 .pricing-icon {
     position: absolute;
     left: -0.3rem;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
 }
 
 .price-link-text {
@@ -89,7 +105,8 @@
 }
 
 .card-list  p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .card-list li {
@@ -128,9 +145,10 @@
 }
 
 .other-services-btn {
-    color: #f0f0f0;   
-    border: 1.4px solid #f0f0f0;
-    width: 9vw;
+    color: #dcdcdc;   
+    border: 1.4px solid #dcdcdc;
+    width: fit-content;
+    font-weight: 600;
 }
 
 .other-service-content {
@@ -142,7 +160,15 @@
 .other-service-content-card p {
     margin: 1rem 0;
     color: #183835;
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+
+.title h4 {
+    font-weight: 700;
+    font-size: 1.2rem;   
+}
+.title p{
+    font-size: 1.1rem;   
 }
 
 @media only screen and (max-width: 600px) {

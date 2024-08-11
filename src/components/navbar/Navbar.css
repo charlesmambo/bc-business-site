@@ -1,7 +1,7 @@
 nav {
-    font-family: "Familjen Grotesk", sans-serif;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    gap: 1.3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,17 +23,17 @@ nav {
 .nav  {
     display: flex;
     align-items: center;
-    gap: 2.4rem;
+    gap: 3.3rem;
 }
 
 .nav-item-list li a {
-    color: #dedede;
+    color: #dcdcdc;
     letter-spacing: 1px;
     transition: font-size 0.6s ease, color 0.6s ease;
 }
 .nav-item-list li a:hover {
     color: #3fa2f6;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 
@@ -43,12 +43,12 @@ nav {
 }
 
 .contant-link {
-    color: #dedede;   
+    color: #dcdcdc;   
 }
 
 .contant-btn {
-    border: 1px solid #ffffff;
-    width: 3.5rem;
+    border: 1px solid #dcdcdc;
+    width: fit-content;
     padding: 0.4rem 1rem;
     border-radius: 4rem;
     text-align: center;
@@ -69,7 +69,7 @@ nav {
 /* Drop Down navbar  */
 .hambarger,
 .drop-down-navbar {
-    color: #fbfdfd;
+    color: #dcdcdc;
     font-size: 1.8rem;
     cursor: pointer;
     display: none;
@@ -113,13 +113,13 @@ nav {
 }
 
 .dropdown-contactbtn {
-    border: 1px solid #ffffff;
+    border: 1px solid #dcdcdc;
     width: 3.5rem;
     padding: 0.4rem 1rem;
     border-radius: 4rem;
     text-align: center;
     transition: border-color 0.6s ease, color 0.6s ease;
-    color: #fbfdfd;
+    color: #dcdcdc;
 }
 
 .close-btn {
@@ -132,7 +132,7 @@ nav {
 }
 .close-btn-icon {
     color: #ff0000;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     cursor: pointer;
 }
 
@@ -164,11 +164,11 @@ nav {
     }
 
     .nav-item-list li a {
-       font-size: 1.1rem;
+       font-size: 1.2rem;
     }
 
     .dropdown-contactbtn span {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
      }
 
      .dropdown-contactbtn {

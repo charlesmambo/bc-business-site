@@ -4,6 +4,8 @@ import Navbar from '../components/navbar/Navbar';
 import '../home/Home.css'
 import About from '../about/About';
 import Footer from '../components/footer/Footer';
+import FixedBtn from '../components/fixed-btn/FixedBtn';
+
 
 
 const Home = ({ scrollToAbout, aboutRef }) => {
@@ -20,6 +22,7 @@ const Home = ({ scrollToAbout, aboutRef }) => {
         <Header />
         
 
+          <FixedBtn/>
         <div className="box">
 
         </div>

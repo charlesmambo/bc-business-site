@@ -46,7 +46,7 @@ const Navbar = ({ scrollToAbout }) => {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="#"
                 className={activeLink === 'about' ? 'focus' : ''}
@@ -54,7 +54,7 @@ const Navbar = ({ scrollToAbout }) => {
               >
                 About
               </a>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="/services"
