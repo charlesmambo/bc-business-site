@@ -64,15 +64,15 @@ footer h4 {
     width: fit-content;
     padding: 0.35rem 1rem;
     border-radius: 4rem;
-    transition: border-color 0.6s ease, color 0.6s ease;
+    transition: transform 0.5s ease-in-out;
     position: relative;
     box-sizing: border-box;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-.ctc-links a:hover {
-    border: 1px solid #3fa2f6;
+.ctc-links:hover {
+    transform: scale(1.02);  
     color: #3fa2f6;
 }
 
@@ -94,7 +94,7 @@ footer h4 {
     font-size: 2.5rem;
     position: absolute;
     left: -0.3rem;
-    top: -0.2rem;
+    top: -0.3rem;
 }
 
 @media only screen and (max-width: 600px) {

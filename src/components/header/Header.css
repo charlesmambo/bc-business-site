@@ -17,12 +17,13 @@
 .card-content {
     width: 75vw;
     padding: 1.5rem;
+    height: 66vh;
 }
 
 .card-img {
     width: 29vw; 
     overflow: hidden;
-    height: fit-content;
+    height: 66vh;
     position: relative;
 }
 
@@ -63,13 +64,13 @@ position: relative;
 
 h1 {
     color: #183835;
-    font-size: 3.9rem;
+    font-size: 3.5rem;
     font-weight: 500;
 }
 
 h3 {
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -214,12 +215,12 @@ margin-top: 1.3rem;
     .card-content {
         width: 98vw;
         box-sizing: border-box;
-        height: 35vh;
+        height: 36vh;
     }
 
     .card-img {
-        width: 55vw; 
-        height: 35vh;
+        width: 50vw; 
+        height: 36vh;
         box-sizing: border-box;
     }
 
@@ -228,5 +229,26 @@ margin-top: 1.3rem;
         padding: 0.7rem 0.8rem; 
         font-family: inherit;
      }
+
+     h1 {
+        color: #183835;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    h3 {
+        font-weight: 300;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .services-title {
+        width: 40vw;
+    }
+
+    .card-img img {
+        height: 36vh;
+        display: block;
+        border-radius: 0.3rem;
+    }
   }
   
