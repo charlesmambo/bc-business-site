@@ -6,6 +6,7 @@ import About from './about/About'
 import Services from './services/Services';
 import Pricing from './pricing/Pricing';
 import Contact from './contact/Contact';
+import Request from './components/requestQoute/Request';
 // import About from './components/about/About';
 // import Services from './components/services/Services';
 // import Pricing from './components/pricing/Pricing';
@@ -27,6 +28,7 @@ const App = () => {
          <Route path="/about" element={<About />} />
          <Route path="/pricing" element={<Pricing />} />
          <Route path="/contact" element={<Contact />} /> 
+         <Route path="/request" element={<Request />} /> 
         {/* // <Route path="/services" element={<Services />} />
         // <Route path="/pricing" element={<Pricing />} />
         // <Route path="/contact" element={<Contact />} />  */}

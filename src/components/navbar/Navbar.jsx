@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import '../navbar/Navbar.css';
 import Logo from '../../assets/logo.svg';
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -8,8 +8,8 @@ import { IoMdClose } from "react-icons/io";
 
 const Navbar = ({ scrollToAbout }) => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-  const [activeLink, setActiveLink] = useState('');
   const navigate = useNavigate();
+  const location = useLocation(); // New hook to get the current path
 
   const toggleDropdown = () => {
     setIsDropdownVisible(!isDropdownVisible);
@@ -20,11 +20,12 @@ const Navbar = ({ scrollToAbout }) => {
   };
 
   const handleLinkClick = (link) => {
-    setActiveLink(link);
     closeDropdown(); // Close dropdown after clicking the link
-    if (link === 'about') {
+    if (link === '/about') {
       navigate('/');
       setTimeout(scrollToAbout, 100);
+    } else {
+      navigate(link);
     }
   };
 
@@ -40,26 +41,17 @@ const Navbar = ({ scrollToAbout }) => {
             <li>
               <Link
                 to="/"
-                className={activeLink === 'home' ? 'focus' : ''}
-                onClick={() => handleLinkClick('home')}
+                className={location.pathname === '/' ? 'focus' : ''}
+                onClick={() => handleLinkClick('/')}
               >
                 Home
               </Link>
             </li>
-            {/* <li>
-              <a
-                href="#"
-                className={activeLink === 'about' ? 'focus' : ''}
-                onClick={() => handleLinkClick('about')}
-              >
-                About
-              </a>
-            </li> */}
             <li>
               <Link
                 to="/services"
-                className={activeLink === 'services' ? 'focus' : ''}
-                onClick={() => handleLinkClick('services')}
+                className={location.pathname === '/services' ? 'focus' : ''}
+                onClick={() => handleLinkClick('/services')}
               >
                 Services
               </Link>
@@ -67,8 +59,8 @@ const Navbar = ({ scrollToAbout }) => {
             <li>
               <Link
                 to="/pricing"
-                className={activeLink === 'pricing' ? 'focus' : ''}
-                onClick={() => handleLinkClick('pricing')}
+                className={location.pathname === '/pricing' ? 'focus' : ''}
+                onClick={() => handleLinkClick('/pricing')}
               >
                 Pricing
               </Link>
@@ -77,8 +69,8 @@ const Navbar = ({ scrollToAbout }) => {
 
           <Link
             to="/contact"
-            className={`contant-link ${activeLink === 'contact' ? '' : ''}`}
-            onClick={() => handleLinkClick('contact')}
+            className={`contant-link ${location.pathname === '/contact' ? 'focus' : ''}`}
+            onClick={() => handleLinkClick('/contact')}
           >
             <div className="contant-btn">
               <span>Contact</span>
@@ -97,8 +89,8 @@ const Navbar = ({ scrollToAbout }) => {
             <li className='drop-down-items'>
               <Link
                 to="/"
-                className={activeLink === 'home' ? 'focus' : ''}
-                onClick={() => handleLinkClick('home')}
+                className={location.pathname === '/' ? 'focus' : ''}
+                onClick={() => handleLinkClick('/')}
               >
                 Home
               </Link>
@@ -106,8 +98,8 @@ const Navbar = ({ scrollToAbout }) => {
             <li className='drop-down-items'>
               <a
                 href="#"
-                className={activeLink === 'about' ? 'focus' : ''}
-                onClick={() => handleLinkClick('about')}
+                className={location.pathname === '/about' ? 'focus' : ''}
+                onClick={() => handleLinkClick('/about')}
               >
                 About
               </a>
@@ -115,8 +107,8 @@ const Navbar = ({ scrollToAbout }) => {
             <li className='drop-down-items'>
               <Link
                 to="/services"
-                className={activeLink === 'services' ? 'focus' : ''}
-                onClick={() => handleLinkClick('services')}
+                className={location.pathname === '/services' ? 'focus' : ''}
+                onClick={() => handleLinkClick('/services')}
               >
                 Services
               </Link>
@@ -124,8 +116,8 @@ const Navbar = ({ scrollToAbout }) => {
             <li className='drop-down-items'>
               <Link
                 to="/pricing"
-                className={activeLink === 'pricing' ? 'focus' : ''}
-                onClick={() => handleLinkClick('pricing')}
+                className={location.pathname === '/pricing' ? 'focus' : ''}
+                onClick={() => handleLinkClick('/pricing')}
               >
                 Pricing
               </Link>
@@ -134,8 +126,8 @@ const Navbar = ({ scrollToAbout }) => {
 
           <Link
             to="/contact"
-            className={`dropdown-link ${activeLink === 'contact' ? 'focus' : ''}`}
-            onClick={() => handleLinkClick('contact')}
+            className={`dropdown-link ${location.pathname === '/contact' ? 'focus' : ''}`}
+            onClick={() => handleLinkClick('/contact')}
           >
             <div className="dropdown-contactbtn">
               <span>Contact</span>

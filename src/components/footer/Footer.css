@@ -62,18 +62,19 @@ footer h4 {
     letter-spacing: 1px;
     border: 1px solid  #dededee1;
     width: fit-content;
-    padding: 0.35rem 1rem;
+    padding: 0.46rem 1rem;
     border-radius: 4rem;
-    transition: transform 0.5s ease-in-out;
+    transition: border-color 0.6s ease, color 0.6s ease;
     position: relative;
     box-sizing: border-box;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.ctc-links:hover {
-    transform: scale(1.02);  
-    color: #3fa2f6;
+/* .ctc-links:hover, */
+.ctc-links a:hover {
+    border: 1px solid #3fa2f6;
+    color: #3fa2f6; 
 }
 
 .ctc-link-text {

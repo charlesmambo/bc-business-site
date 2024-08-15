@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../header/Header.css';
-import ProfileImg from '../../assets/profile.jpg';
+import ProfileImg from '../../assets/img.jpg';
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Header = () => {

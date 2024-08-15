@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../footer/Footer.css';
 import Logo from '../../assets/logo.svg';
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+    const [activeLink, setActiveLink] = useState('');
+    const navigate = useNavigate();
+  
+    const handleLinkClick = (link) => {
+      setActiveLink(link);
+    };
   return (
    <footer>
         <div className="footer-logo">
@@ -18,14 +25,32 @@ const Footer = () => {
                 Navigate
             </h4>
             <li>
-                <a href="">Home</a>
+            <Link
+                to="/"
+                className={activeLink === 'home' ? 'focus' : ''}
+                onClick={() => handleLinkClick('home')}
+              >
+                Home
+              </Link>
             </li>
             <li className='navigate-links'>
-                <a href="">Services</a>
+            <Link
+                to="/services"
+                className={activeLink === 'services' ? 'focus' : ''}
+                onClick={() => handleLinkClick('services')}
+              >
+                Services
+              </Link>
             </li>
             <li>
-                <a href="">Pricing</a>
-            </li>
+            <Link
+                to="/pricing"
+                className={activeLink === 'pricing' ? 'focus' : ''}
+                onClick={() => handleLinkClick('pricing')}
+              >
+                Pricing
+              </Link>
+              </li>
         </ul>
 
         <ul className='ft ft-socials'>
@@ -36,12 +61,13 @@ const Footer = () => {
                 <a href="">Contact</a>
             </li> */}
             <li  className='ctc-links'>
-                <a href="" className='ctc-l'>
-                <IoIosArrowDroprightCircle className='ctc-icon'/>
-                    <span className='ctc-link-text'>
+                <Link
+                to="/request"
+                className={`contant-link ${activeLink === 'request' ? 'active' : ''}`}
+                onClick={() => handleLinkClick('request')}
+              >
                     Request Quote
-                    </span>
-                </a>
+                    </Link>
             </li>
         </ul>
         <ul className='footer-links ft'>

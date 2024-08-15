@@ -32,16 +32,19 @@ nav {
     font-weight: 400;
     transition: font-size 0.6s ease, color 0.6s ease;
 }
-.nav-item-list li a:hover {
+/* .nav-item-list li a:hover {
     color: #3fa2f6;
     font-size: 1.1rem;
-}
+} */
 
 
-
-.focus:active{
+.nav-item-list li a.focus,
+.nav-item-list li a:focus {
     color: #3fa2f6;
+    font-weight: 600;
 }
+
+
 
 .contant-link {
     color: #dcdcdc;   

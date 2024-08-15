@@ -40,7 +40,7 @@ const Services = () => {
 
            <div className="service-box">
              <h4>VAT Preparation</h4>
-             <p>Streamline your VAT preparation with our dedicated services. We meticulously organise and prepare your VAT records, ensuring they are accurate and ready for submission, saving you time and minimising further accountacy fees or penalties from HMRC.</p>
+             <p>Streamline your VAT preparation with our dedicated services. We meticulously organise and prepare your VAT records, ensuring they are accurate and ready for submission, saving you time and minimising further accountacy fees or penalties from SARS.</p>
              <div className="number">
                 <p>4</p>
             </div>
