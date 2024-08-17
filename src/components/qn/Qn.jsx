@@ -12,7 +12,7 @@ const Qn = () => {
   const questions = [
     {
       title: "What is bookkeeping, and why is it important for my business?",
-      content: "Bookkeeping involves systematically recording, organising, and tracking financial transactions in your business. It's essential for businesses because accurate bookkeeping helps you monitor your financial health, comply with HMRC requirements, make informed decisions, and prepare for tax returns."
+      content: "Bookkeeping involves systematically recording, organising, and tracking financial transactions in your business. It's essential for businesses because accurate bookkeeping helps you monitor your financial health, comply with SARS requirements, make informed decisions, and prepare for tax returns."
     },
     {
       title: "What qualifications and certifications do your bookkeepers hold?",
@@ -23,32 +23,32 @@ const Qn = () => {
       content: "Yes, we offer financial and tax advisory services to help you make informed decisions, optimise your tax strategies, and plan for the future."
     },
     {
-      title: "Do I need to hire a professional bookkeeper for my small business in the UK, or can I handle it myself?",
-      content: "Whether to hire a bookkeeper depends on your business's size and complexity. While some small businesses manage bookkeeping in-house, hiring a professional can save you time, reduce errors, and ensure compliance with UK tax laws and regulations."
+      title: "Do I need to hire a professional bookkeeper for my small business in the SA, or can I handle it myself?",
+      content: "Whether to hire a bookkeeper depends on your business's size and complexity. While some small businesses manage bookkeeping in-house, hiring a professional can save you time, reduce errors, and ensure compliance with SA tax laws and regulations."
     },
     {
       title: "How often should I update my financial records?",
       content: "Most businesses update financial records monthly. However, some may do so weekly or even daily, depending on the volume of transactions. Regular updates help maintain accuracy and facilitate timely decision-making."
     },
     {
-      title: "What documents and records should I keep for bookkeeping purposes in the UK?",
-      content: "Essential records include sales invoices, purchase receipts, bank statements, payroll records, expense reports, and VAT records. Proper record-keeping is vital for HMRC audits and tax filings."
+      title: "What documents and records should I keep for bookkeeping purposes in the SA?",
+      content: "Essential records include sales invoices, purchase receipts, bank statements, payroll records, expense reports, and VAT records. Proper record-keeping is vital for SARS audits and tax filings."
     },
     {
-      title: "How can bookkeeping help me with my UK tax obligations?",
-      content: "Accurate bookkeeping ensures you report income and expenses correctly, claim eligible deductions, and meet tax deadlines. It also provides a clear financial trail for HMRC audits, reducing the risk of penalties."
+      title: "How can bookkeeping help me with my SA tax obligations?",
+      content: "Accurate bookkeeping ensures you report income and expenses correctly, claim eligible deductions, and meet tax deadlines. It also provides a clear financial trail for SARS audits, reducing the risk of penalties."
     },
     {
-      title: "What software or tools do you recommend for bookkeeping in the UK?",
+      title: "What software or tools do you recommend for bookkeeping in the SA?",
       content: "We recommend and advise using Xero which is included in our fee. If you are using Sage, Quickbooks, or FreeAgent, we offer a transfer service. If you don't use cloud-based software, we will set this up for you."
     },
     {
-      title: "Can you help me set up a chart of accounts tailored to my UK business?",
+      title: "Can you help me set up a chart of accounts tailored to my SA business?",
       content: "Yes, we can create a custom chart of accounts to suit your business needs, ensuring that income and expenses are properly categorised for accurate reporting and analysis."
     },
     {
-      title: "What is Making Tax Digital (MTD), and how does it affect my business's bookkeeping in the UK?",
-      content: "MTD is a UK government initiative requiring businesses to maintain digital records and submit VAT returns electronically. We can assist you in transitioning to MTD-compliant bookkeeping software and processes."
+      title: "What is Making Tax Digital (MTD), and how does it affect my business's bookkeeping in the SA?",
+      content: "MTD is a SA government initiative requiring businesses to maintain digital records and submit VAT returns electronically. We can assist you in transitioning to MTD-compliant bookkeeping software and processes."
     }
   ];
 

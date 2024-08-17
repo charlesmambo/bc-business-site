@@ -13,6 +13,7 @@
     height: fit-content;
     margin-top: 2.5rem;
     box-sizing: border-box;
+    position: relative;
 }
 .card-content {
     width: 75vw;
@@ -117,6 +118,7 @@ display: flex;
 align-items: center;
 gap: 1.8rem;
 margin-top: 1.3rem;
+
 }
 
 .contact-form input {
@@ -154,6 +156,24 @@ margin-top: 1.3rem;
 .contact-form button:hover {
     cursor: pointer;
     transform: scale(1.02);  
+}
+
+.success-box {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 1rem;
+    position: absolute;
+    bottom: 2.7rem;
+    left: 1.1rem;
+    z-index: 4000;
+    background-color: #fff;
+    color: #148937;
+    text-align: center;
+}
+
+.wait-btn {
+  border: 2px solid #0c5221 !important;  
+  background-color: #fff !important; 
+  color: #183835 !important;
 }
 
 @media only screen and (max-width: 600px) {

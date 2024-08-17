@@ -10,7 +10,18 @@ const About = () => {
         <hr className='abt-divider' />
       </div>
       <div className="abt-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quod asperiores sed minima porro. Ea in, eius dolores incidunt, tempore est sunt cupiditate qui porro aliquam deserunt sapiente quibusdam rem eligendi ex nostrum officia! Aperiam odio aliquam vitae expedita odit nostrum rerum. Sunt, aspernatur, eius vero nesciunt, quaerat quas tempore aliquid dignissimos nisi accusamus unde ex! Ratione nobis nulla inventore dignissimos cumque a dolores saepe eos, quis esse voluptates exercitationem obcaecati, quia vero porro molestiae incidunt, sint mollitia magnam labore! Nihil eos eveniet odio nostrum quisquam quos, officiis ipsam, laboriosam dolorum temporibus hic eaque pariatur? Hic fuga voluptas eius aliquid amet iusto sunt, eveniet libero repellendus fugiat eligendi expedita? Est architecto voluptatum blanditiis officiis aliquam laborum earum amet maxime repudiandae. Consequuntur ut magnam ea optio distinctio fuga eaque tenetur accusamus incidunt? Nemo eum, impedit quis placeat quod beatae, commodi odio esse ut, tenetur enim dolores excepturi quia? Aliquid sapiente, pariatur quibusdam illo culpa enim quod est repellendus quasi quia dolorem cupiditate amet possimus aut explicabo, ex corrupti repudiandae, exercitationem ab ad accusamus vero sint debitis! Similique eius quo commodi? Autem placeat quaerat quisquam iure. Provident non beatae consequuntur unde tenetur nisi vel delectus, quo dolor eligendi? Tempora quam dolorum omnis?</p>
+        <p>Welcome to Kariwo Bookkeeping Services, a fresh and disruptive digital bookkeeping service based in the vibrant city of Cape Town, South Africa. We are not your traditional bookkeeping firm with decades of experience under our belt. Instead, we are a new and dynamic team, eager to redefine the way bookkeeping services are delivered in today’s fast-paced digital world.</p>
+        <hr className='abt-divider divider' />
+        <p>At Kariwo Bookkeeping Services, we believe that trust is earned through action, not tenure. We don't ask you to trust us because of our years of experience; rather, we invite you to give us the chance to gain that experience by serving you. Our mission is to build new, meaningful, and lasting relationships with each of our clients by delivering precise, efficient, and innovative bookkeeping solutions that meet your unique needs.</p>
+        <hr className='abt-divider divider' />
+        <p>Our approach is centered on leveraging cutting-edge technology to streamline your financial processes, giving you more time to focus on what truly matters—growing your business. We are passionate about growth—both yours and ours—and see each partnership as an opportunity to learn, adapt, and excel together.</p>
+        <hr className='abt-divider divider' />
+        <p>As we embark on this journey, we are guided by the belief that every business, like every person, starts somewhere. Just as a child grows and learns with each new experience, we too are committed to growing with you, continually improving and innovating to provide the best possible service.</p>
+        <hr className='abt-divider divider' />
+        <p>To quote the famous thinker, Ralph Waldo Emerson: "The creation of a thousand forests is in one acorn." At Kariwo Bookkeeping Services, we see ourselves as that acorn—small, new, and full of potential. We are excited to grow and flourish with you, creating something extraordinary together.
+        <b>Join us on this journey.</b> Let’s build something lasting.
+        </p>
+       
       </div>
 
       <div className="our-pillars">

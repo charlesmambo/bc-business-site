@@ -33,7 +33,7 @@ const Navbar = ({ scrollToAbout }) => {
     <>
       <nav>
         <div className="logo-container">
-          <img src={Logo} alt="logo image" />
+          <h2>Kariwo Book Keeping</h2>
         </div>
 
         <div className="nav">

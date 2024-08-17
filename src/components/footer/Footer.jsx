@@ -17,7 +17,7 @@ const Footer = () => {
   return (
    <footer>
         <div className="footer-logo">
-            <img src={Logo} alt="logo" />
+            <h2>Kariwo Book Keeping</h2>
             <p>Accountant-Led Bookkeeping <br />To Elevate Your Business</p>
         </div>
         <ul className='footer-links'>

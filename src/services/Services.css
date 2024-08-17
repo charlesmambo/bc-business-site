@@ -3,10 +3,11 @@
     position: relative;
 }
 .service-title h2 {
-    width: 25vw;
+    width: 28vw;
     color: #183835;
     font-size: 1.7rem;
     font-weight: 700;
+   
 }
 .services-content {
     margin-top: 1.7rem;
@@ -14,6 +15,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.3rem;
+}
+
+.s-title:hover {
+    cursor: pointer !important;
 }
 
 .service-box {

@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-between;
     color: #183835;
+    position: relative;
 }
 
 .contact-intro {
@@ -27,6 +28,13 @@
     margin: 1.4rem 0;
 }
 
+.ctc-success-box {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+}
 
 .contact-details h4 {
     font-size: 1.2rem; 

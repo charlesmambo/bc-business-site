@@ -35,11 +35,16 @@ gap: 1.2rem;
     line-height: 24px;
 }
 
+.divider {
+    width: 100%;
+}
+
 
 /* Pillars  */
 
 .our-pillars {
     margin: 2.2rem 0;
+    margin-top: 3rem;
 }
 
 @media only screen and (max-width: 600px) {

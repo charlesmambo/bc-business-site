@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react'; 
 import '../pricing/Pricing.css';
 import { FaCheckCircle } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Footer from '../components/footer/Footer';
 import FixedBtn from '../components/fixed-btn/FixedBtn';
-
+import { Link, useNavigate } from 'react-router-dom';
 
 const Pricing = () => {
+    const [activeLink, setActiveLink] = useState('');
+    const navigate = useNavigate();
+  
+    const handleLinkClick = (link) => {
+      setActiveLink(link);
+    };
   return (
     <div>
     <div className='pricing-container'>
@@ -32,6 +38,7 @@ const Pricing = () => {
                     <span className='price-link-text' >
                     Get a Quote
                     </span>
+                    
                  </a>
                 
                 <ul className='card-list'>
@@ -273,10 +280,20 @@ const Pricing = () => {
 
             <a className='price-link other-services-btn' href="">
                 <IoIosArrowDroprightCircle className='pricing-icon'/>
-                    <span className='price-link-text' >
+                    {/* <span className='price-link-text' >
                     Get a Quote
-                    </span>
-                 </a>
+                    </span> */}
+
+                    <Link
+                     to="/request"
+                    className={`contant-link ${activeLink === 'request' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('request')}
+                     >
+                   <span className='price-link-text'>
+                   Get a Quote
+                    </span> 
+                    </Link>
+            </a>
         </div>
 
         <div className="other-service-content">
