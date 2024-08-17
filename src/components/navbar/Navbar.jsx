@@ -33,7 +33,7 @@ const Navbar = ({ scrollToAbout }) => {
     <>
       <nav>
         <div className="logo-container">
-          <h2>Kariwo Book Keeping</h2>
+          <h2>Kariwo Bookkeeping Services</h2>
         </div>
 
         <div className="nav">

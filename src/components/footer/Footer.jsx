@@ -17,7 +17,7 @@ const Footer = () => {
   return (
    <footer>
         <div className="footer-logo">
-            <h2>Kariwo Book Keeping</h2>
+            <h2>Kariwo Bookkeeping Services</h2>
             <p>Accountant-Led Bookkeeping <br />To Elevate Your Business</p>
         </div>
         <ul className='footer-links'>
@@ -53,13 +53,11 @@ const Footer = () => {
               </li>
         </ul>
 
-        <ul className='ft ft-socials'>
+        {/* <ul className='ft ft-socials'>
             <h4>
                 Get in touch
             </h4>
-            {/* <li className='ctc-links'>
-                <a href="">Contact</a>
-            </li> */}
+         
             <li  className='ctc-links'>
                 <Link
                 to="/request"
@@ -69,7 +67,7 @@ const Footer = () => {
                     Request Quote
                     </Link>
             </li>
-        </ul>
+        </ul> */}
         <ul className='footer-links ft'>
             <h4>
             Legal

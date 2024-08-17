@@ -107,8 +107,8 @@ nav {
 .logo-container h2,
 .footer-logo h2 {
     color: #dcdcdc;
-    font-weight: 900;
-    /* font-family: "Preahvihear", sans-serif; */
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace;
     font-size: 1.6rem;
 }
 

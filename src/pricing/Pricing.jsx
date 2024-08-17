@@ -6,6 +6,7 @@ import Footer from '../components/footer/Footer';
 import FixedBtn from '../components/fixed-btn/FixedBtn';
 import { Link, useNavigate } from 'react-router-dom';
 
+
 const Pricing = () => {
     const [activeLink, setActiveLink] = useState('');
     const navigate = useNavigate();
@@ -24,6 +25,7 @@ const Pricing = () => {
 
         <FixedBtn />
         <div className="pricing-cards-container">
+
             <div className="p-card">
                 <h4>28 hours per month</h4>
                 <p className='price-text'>
@@ -147,7 +149,7 @@ const Pricing = () => {
                 </ul>
             </div>
 
-            {/* <div className="p-card">
+            <div className="p-card">
                 <h4>16 hours per month</h4>
                 <p className='price-text'>
                     <span className='highlighted'>
@@ -185,8 +187,8 @@ const Pricing = () => {
                         Expense Tracking
                     </li>
                 </ul>
-            </div> */}
- {/*
+            </div>
+ 
             <div className="p-card">
                 <h4>20 hours per month</h4>
                 <p className='price-text'>
@@ -266,7 +268,7 @@ const Pricing = () => {
                         Expense Tracking
                     </li>
                 </ul>
-            </div> */}
+            </div> 
 
         </div>
      </div>

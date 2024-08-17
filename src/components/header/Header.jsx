@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../header/Header.css';
 import ProfileImg from '../../assets/img.jpg';
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Header = () => {
   const [services, setServices] = useState([
@@ -14,15 +15,9 @@ const Header = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const handleMouseEnter = (index) => {
+  const toggleDescription = (index) => {
     setServices(services.map((service, i) => 
-      i === index ? { ...service, showDescription: true } : service
-    ));
-  };
-
-  const handleMouseLeave = (index) => {
-    setServices(services.map((service, i) => 
-      i === index ? { ...service, showDescription: false } : service
+      i === index ? { ...service, showDescription: !service.showDescription } : service
     ));
   };
 
@@ -61,14 +56,16 @@ const Header = () => {
         <h1>Streamline Your <br />Finances</h1>
         <div className="services-list">
           {services.map((service, index) => (
-            <div 
-              className="service-content" 
-              key={index}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={() => handleMouseLeave(index)}
-            >
+            <div className="service-content" key={index}>
               <div className="services-title">
                 <h3 className='s-title'>{service.title}</h3>
+                <div className="services-icon">
+                  {service.showDescription ? (
+                    <FaMinus className='icon' onClick={() => toggleDescription(index)} />
+                  ) : (
+                    <FaPlus className='icon' onClick={() => toggleDescription(index)} />
+                  )}
+                </div>
               </div>
               <div className={`service-descriptions ${service.showDescription ? 'show' : ''}`}>
                 {service.description.map((desc, i) => (

@@ -18,8 +18,8 @@ const About = () => {
         <hr className='abt-divider divider' />
         <p>As we embark on this journey, we are guided by the belief that every business, like every person, starts somewhere. Just as a child grows and learns with each new experience, we too are committed to growing with you, continually improving and innovating to provide the best possible service.</p>
         <hr className='abt-divider divider' />
-        <p>To quote the famous thinker, Ralph Waldo Emerson: "The creation of a thousand forests is in one acorn." At Kariwo Bookkeeping Services, we see ourselves as that acorn—small, new, and full of potential. We are excited to grow and flourish with you, creating something extraordinary together.
-        <b>Join us on this journey.</b> Let’s build something lasting.
+        <p>
+        <b>Join us on this journey. Let’s build something lasting.</b>
         </p>
        
       </div>
