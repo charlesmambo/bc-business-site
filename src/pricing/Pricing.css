@@ -46,11 +46,23 @@
     transform: scale(1.02);  
 }
 
+.other-services-link {
+    color: #dcdcdc !important;  
+    font-weight: 500;
+}
+
 .p-card h4 {
     margin-bottom: 0.6rem;
     font-weight: 700;
-    font-size: 1.2rem; 
+    font-size: 1.4rem; 
     color: #183835;  
+}
+
+.price-link-text {
+    color: #183835;
+}
+.price-link-text:hover {
+    color: #eef0f0;
 }
 
 
@@ -180,6 +192,7 @@
 @media only screen and (max-width: 600px) {
     .pricing-container {
         padding: 6rem 1rem;
+        padding-top: 8rem;
     } 
 
     .pricing-cards-container{

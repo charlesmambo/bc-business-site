@@ -125,6 +125,7 @@ input:-webkit-autofill {
         padding: 6rem 1rem;
         flex-direction: column;
         margin-bottom: -2.9rem;
+        padding-top: 8rem;
     } 
     .contact-intro {
         width: 88vw;

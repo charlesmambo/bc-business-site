@@ -96,15 +96,6 @@ const Navbar = ({ scrollToAbout }) => {
               </Link>
             </li>
             <li className='drop-down-items'>
-              <a
-                href="#"
-                className={location.pathname === '/about' ? 'focus' : ''}
-                onClick={() => handleLinkClick('/about')}
-              >
-                About
-              </a>
-            </li>
-            <li className='drop-down-items'>
               <Link
                 to="/services"
                 className={location.pathname === '/services' ? 'focus' : ''}

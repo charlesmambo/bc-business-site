@@ -63,8 +63,8 @@ const Services = () => {
            </div> 
 
             <div className="service-box">
-             <h4>Construction Industry Schemes (CIS) Guidance</h4>
-             <p>Navigate the complexities of the Construction Industry Scheme (CIS) with confidence through our comprehensive suite of services. Whether you're a contractor, subcontractor, or construction business owner, our expert guidance, seamless submissions, and efficient payment processing ensure compliance and financial efficiency within the construction sector.</p>
+             <h4>Hospitality Compliance Services</h4>
+             <p>Optimize your operations and master the complexities of the hospitality industry in South Africa with our expert services. Whether you manage a restaurant, hotel, or catering business, our guidance ensures efficient food cost management, compliance, and operational success.</p>
              <div className="number">
                 <p>7</p>
             </div>

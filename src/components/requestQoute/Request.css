@@ -1,3 +1,12 @@
 .request-icon {
     font-size: 12rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .request  {
+     padding-top: 0.1rem;
+    }
+    .request-icon {
+        font-size: 9rem;
+    }
+}

@@ -40,15 +40,15 @@ const Qn = () => {
     },
     {
       title: "What software or tools do you recommend for bookkeeping in the SA?",
-      content: "We recommend and advise using Xero which is included in our fee. If you are using Sage, Quickbooks, or FreeAgent, we offer a transfer service. If you don't use cloud-based software, we will set this up for you."
+      content: "We recommend and advise using Xero which is included in our fee. If you are using Sage, Quickbooks, or LegalSuite, we offer a transfer service. If you don't use cloud-based software, we will set this up for you."
     },
     {
       title: "Can you help me set up a chart of accounts tailored to my SA business?",
       content: "Yes, we can create a custom chart of accounts to suit your business needs, ensuring that income and expenses are properly categorised for accurate reporting and analysis."
     },
     {
-      title: "What is Making Tax Digital (MTD), and how does it affect my business's bookkeeping in the SA?",
-      content: "MTD is a SA government initiative requiring businesses to maintain digital records and submit VAT returns electronically. We can assist you in transitioning to MTD-compliant bookkeeping software and processes."
+      title: "What is E-filing, and how does it affect my business's bookkeeping in the SA?",
+      content: "E-filing is a powerful tool that modernizes how businesses in South Africa manage their tax obligations. By adopting E-filing, your business can simplify its bookkeeping processes, enhance accuracy, ensure compliance, and save time, all of which contribute to better financial management and operational efficiency."
     }
   ];
 

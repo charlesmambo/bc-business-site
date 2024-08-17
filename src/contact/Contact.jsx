@@ -41,16 +41,16 @@ const Contact = () => {
 
           <div className="contact-details">
             <h4>Address</h4>
-            <p>12 Payton Street,</p>
-            <p>Stratford-Upon-Avon,</p>
-            <p>England, CV37 6UA.</p>
+            <p>110 Pringle Road,</p>
+            <p>Tijgerhof, Milnerton,</p>
+            <p>Cape Town SA, 7441.</p>
           </div>
         </div>
 
         <form ref={form1} onSubmit={handleSubmit}>
           <div className="form-control">
             <label htmlFor="fullName">Name</label>
-            <input type="text" name="name" placeholder='Full Name' autoComplete="off" />
+            <input type="text" name="name" placeholder='Full Name' autoComplete="off" required  />
           </div>
           <div className="form-control">
             <label htmlFor="Email">Email</label>
@@ -58,11 +58,11 @@ const Contact = () => {
           </div>
           <div className="form-control">
             <label htmlFor="Phone">Phone</label>
-            <input type="tel" name="phone" placeholder='2781673534974' required autoComplete="off" />
+            <input type="tel" name="phone" placeholder='+27 81 673 5344' required autoComplete="off" />
           </div>
           <div className="form-control">
             <label htmlFor="Message">Message</label>
-            <textarea name="message" placeholder='Your message'></textarea>
+            <textarea name="message" placeholder='Your message' required ></textarea>
           </div>
           <div className="form-btn">
             <button type='submit'>Send Message</button>

@@ -7,7 +7,7 @@ const Header = () => {
   const [services, setServices] = useState([
     { title: 'Accountant-led bookkeeping', description: ['Highly qualified accountants & bookkeepers accredited by ACCA and CIMA.', 'Experts in Xero, Sage, and QuickBooks', 'Strategic financial insights to help your business grow'], showDescription: false },
     { title: 'Client-centric approach', description: ['Dedicated point of contact who knows your business inside and out.', 'Proactive guidance to maximise your financial success and cost-efficiency.', 'Custom solutions that fit your business.'], showDescription: false },
-    { title: 'Security and compliance', description: ['We adhere to SA & EU GDPR, SOC II, and Cloud Security Alliance standards.', 'Upholding industry best practices.', 'Preparation in compliance with SARS.'], showDescription: false }
+    { title: 'Security and compliance', description: ['We strictly adhere to the Protection of Personal Information Act (POPIA).', 'We uphold the industries best practices.', 'Preparation in compliance with SARS.'], showDescription: false }
   ]);
 
   const [email, setEmail] = useState('');

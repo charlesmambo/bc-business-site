@@ -25,6 +25,144 @@ const Pricing = () => {
 
         <FixedBtn />
         <div className="pricing-cards-container">
+            <div className="p-card">
+                <h4>16 hours per month</h4>
+                <p className='price-text'>
+                    <span className='highlighted'>
+                    R585.27
+                    </span> Per hour (excl VAT)</p>
+                <p>Perfect for small businesses ith minimal bookkeeping looking to expand their financial management</p>
+
+                <a className='price-link' href="">
+                <IoIosArrowDroprightCircle className='pricing-icon'/>
+                <Link
+                     to="/request"
+                    className={`contant-link ${activeLink === 'request' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('request')}
+                     >
+                   <span className='price-link-text'>
+                   Get a Quote
+                    </span> 
+                    </Link>
+                 </a>
+                
+                <ul className='card-list'>
+                    <p>Includes</p>
+                    <li>
+                        <FaCheckCircle className='price-check-icon' />
+                        Accountant Led
+                    </li>
+                    <li>
+                        <FaCheckCircle  className='price-check-icon' />
+                        Transaction Recording
+                    </li>
+                    <li>
+                        <FaCheckCircle  className='price-check-icon' />
+                        Bank Reconciliation
+                    </li>
+                    <li>
+                        <FaCheckCircle className='price-check-icon' />
+                        Accounts Payable/Receivable
+                    </li>
+                    <li>
+                        <FaCheckCircle className='price-check-icon' />
+                        Expense Tracking
+                    </li>
+                </ul>
+            </div>
+ 
+            <div className="p-card">
+                <h4>20 hours per month</h4>
+                <p className='price-text'>
+                    <span className='highlighted'>
+                    R585.27
+                    </span> Per hour (excl VAT)</p>
+                <p>Perfect for small businesses looking to manage their finances accordingly</p>
+
+                <a className='price-link' href="">
+                <IoIosArrowDroprightCircle className='pricing-icon'/>
+                <Link
+                     to="/request"
+                    className={`contant-link ${activeLink === 'request' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('request')}
+                     >
+                   <span className='price-link-text'>
+                   Get a Quote
+                    </span> 
+                    </Link>
+                 </a>
+                
+                <ul className='card-list'>
+                    <p>Includes</p>
+                    <li>
+                        <FaCheckCircle className='price-check-icon' />
+                        Accountant Led
+                    </li>
+                    <li>
+                        <FaCheckCircle  className='price-check-icon' />
+                        Transaction Recording
+                    </li>
+                    <li>
+                        <FaCheckCircle  className='price-check-icon' />
+                        Bank Reconciliation
+                    </li>
+                    <li>
+                        <FaCheckCircle className='price-check-icon' />
+                        Accounts Payable/Receivable
+                    </li>
+                    <li>
+                        <FaCheckCircle className='price-check-icon' />
+                        Expense Tracking
+                    </li>
+                </ul>
+            </div>
+
+            <div className="p-card">
+                <h4>24 hours per month</h4>
+                <p className='price-text'>
+                    <span className='highlighted'>
+                    R526.75
+                    </span> Per hour (excl VAT)</p>
+                <p>A plan for businesses seeking comprehensive financial control and growth.</p>
+
+               
+                <a className='price-link' href="">
+                <IoIosArrowDroprightCircle className='pricing-icon'/>
+                <Link
+                     to="/request"
+                    className={`contant-link ${activeLink === 'request' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('request')}
+                     >
+                   <span className='price-link-text'>
+                   Get a Quote
+                    </span> 
+                    </Link>
+                 </a>
+                
+                <ul className='card-list'>
+                    <p>Includes</p>
+                    <li>
+                        <FaCheckCircle className='price-check-icon' />
+                        Accountant Led
+                    </li>
+                    <li>
+                        <FaCheckCircle  className='price-check-icon' />
+                        Transaction Recording
+                    </li>
+                    <li>
+                        <FaCheckCircle  className='price-check-icon' />
+                        Bank Reconciliation
+                    </li>
+                    <li>
+                        <FaCheckCircle className='price-check-icon' />
+                        Accounts Payable/Receivable
+                    </li>
+                    <li>
+                        <FaCheckCircle className='price-check-icon' />
+                        Expense Tracking
+                    </li>
+                </ul>
+            </div> 
 
             <div className="p-card">
                 <h4>28 hours per month</h4>
@@ -37,9 +175,15 @@ const Pricing = () => {
                 {/* get a quote btn */}
                 <a className='price-link' href="">
                 <IoIosArrowDroprightCircle className='pricing-icon'/>
-                    <span className='price-link-text' >
-                    Get a Quote
-                    </span>
+                    <Link
+                     to="/request"
+                    className={`contant-link ${activeLink === 'request' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('request')}
+                     >
+                   <span className='price-link-text'>
+                   Get a Quote
+                    </span> 
+                    </Link>
                     
                  </a>
                 
@@ -79,9 +223,15 @@ const Pricing = () => {
                 {/* get a quote btn */}
                 <a className='price-link' href="">
                 <IoIosArrowDroprightCircle className='pricing-icon'/>
-                    <span className='price-link-text' >
-                    Get a Quote
-                    </span>
+                <Link
+                     to="/request"
+                    className={`contant-link ${activeLink === 'request' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('request')}
+                     >
+                   <span className='price-link-text'>
+                   Get a Quote
+                    </span> 
+                    </Link>
                  </a>
                 
                 <ul className='card-list'>
@@ -119,9 +269,15 @@ const Pricing = () => {
                 {/* get a quote btn */}
                 <a className='price-link' href="">
                 <IoIosArrowDroprightCircle className='pricing-icon'/>
-                    <span className='price-link-text' >
-                    Get a Quote
-                    </span>
+                <Link
+                     to="/request"
+                    className={`contant-link ${activeLink === 'request' ? 'active' : ''}`}
+                    onClick={() => handleLinkClick('request')}
+                     >
+                   <span className='price-link-text'>
+                   Get a Quote
+                    </span> 
+                    </Link>
                  </a>
                 
                 <ul className='card-list'>
@@ -148,127 +304,6 @@ const Pricing = () => {
                     </li>
                 </ul>
             </div>
-
-            <div className="p-card">
-                <h4>16 hours per month</h4>
-                <p className='price-text'>
-                    <span className='highlighted'>
-                    R585.27
-                    </span> Per hour (excl VAT)</p>
-                <p>Perfect for small businesses ith minimal bookkeeping looking to expand their financial management</p>
-
-                <a className='price-link' href="">
-                <IoIosArrowDroprightCircle className='pricing-icon'/>
-                    <span className='price-link-text' >
-                    Get a Quote
-                    </span>
-                 </a>
-                
-                <ul className='card-list'>
-                    <p>Includes</p>
-                    <li>
-                        <FaCheckCircle className='price-check-icon' />
-                        Accountant Led
-                    </li>
-                    <li>
-                        <FaCheckCircle  className='price-check-icon' />
-                        Transaction Recording
-                    </li>
-                    <li>
-                        <FaCheckCircle  className='price-check-icon' />
-                        Bank Reconciliation
-                    </li>
-                    <li>
-                        <FaCheckCircle className='price-check-icon' />
-                        Accounts Payable/Receivable
-                    </li>
-                    <li>
-                        <FaCheckCircle className='price-check-icon' />
-                        Expense Tracking
-                    </li>
-                </ul>
-            </div>
- 
-            <div className="p-card">
-                <h4>20 hours per month</h4>
-                <p className='price-text'>
-                    <span className='highlighted'>
-                    R585.27
-                    </span> Per hour (excl VAT)</p>
-                <p>Perfect for small businesses looking to manage their finances accordingly</p>
-
-                <a className='price-link' href="">
-                <IoIosArrowDroprightCircle className='pricing-icon'/>
-                    <span className='price-link-text' >
-                    Get a Quote
-                    </span>
-                 </a>
-                
-                <ul className='card-list'>
-                    <p>Includes</p>
-                    <li>
-                        <FaCheckCircle className='price-check-icon' />
-                        Accountant Led
-                    </li>
-                    <li>
-                        <FaCheckCircle  className='price-check-icon' />
-                        Transaction Recording
-                    </li>
-                    <li>
-                        <FaCheckCircle  className='price-check-icon' />
-                        Bank Reconciliation
-                    </li>
-                    <li>
-                        <FaCheckCircle className='price-check-icon' />
-                        Accounts Payable/Receivable
-                    </li>
-                    <li>
-                        <FaCheckCircle className='price-check-icon' />
-                        Expense Tracking
-                    </li>
-                </ul>
-            </div>
-
-            <div className="p-card">
-                <h4>24 hours per month</h4>
-                <p className='price-text'>
-                    <span className='highlighted'>
-                    R526.75
-                    </span> Per hour (excl VAT)</p>
-                <p>A plan for businesses seeking comprehensive financial control and growth.</p>
-
-               
-                <a className='price-link' href="">
-                <IoIosArrowDroprightCircle className='pricing-icon'/>
-                    <span className='price-link-text' >
-                    Get a Quote
-                    </span>
-                 </a>
-                
-                <ul className='card-list'>
-                    <p>Includes</p>
-                    <li>
-                        <FaCheckCircle className='price-check-icon' />
-                        Accountant Led
-                    </li>
-                    <li>
-                        <FaCheckCircle  className='price-check-icon' />
-                        Transaction Recording
-                    </li>
-                    <li>
-                        <FaCheckCircle  className='price-check-icon' />
-                        Bank Reconciliation
-                    </li>
-                    <li>
-                        <FaCheckCircle className='price-check-icon' />
-                        Accounts Payable/Receivable
-                    </li>
-                    <li>
-                        <FaCheckCircle className='price-check-icon' />
-                        Expense Tracking
-                    </li>
-                </ul>
-            </div> 
 
         </div>
      </div>
@@ -291,7 +326,7 @@ const Pricing = () => {
                     className={`contant-link ${activeLink === 'request' ? 'active' : ''}`}
                     onClick={() => handleLinkClick('request')}
                      >
-                   <span className='price-link-text'>
+                   <span className='price-link-text other-services-link'>
                    Get a Quote
                     </span> 
                     </Link>

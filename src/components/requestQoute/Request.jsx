@@ -5,11 +5,13 @@ import '../requestQoute/Request.css'
 
 const Request = () => {
   return (
-    <div>
+    <div className='request'>
             <div className='contact-container'>
        <div className="contact-intro">
         <h2>Request a quote</h2>
-        <p className='contact-intro-text'>Discover how BC Books Books can assist with your finance management and bookkeeping.</p>
+        {/* <p className='contact-intro-text'>Ready to take your bookkeeping to the next level?</p> */}
+
+        <p className='contact-intro-text'>Let us provide you with a tailored solution that fits your unique needs. Leave us your details, and we'll get back to you with a personalized quote. Whether you're a small business or a growing enterprise, Kariwo Bookkeeping Services is here to support your financial journey.</p>
 
         <div className="contact-details">
         <RiSendToBack className='request-icon'/>
@@ -27,11 +29,11 @@ const Request = () => {
             </div>
             <div className="form-control">
                 <label htmlFor="Phone">Phone</label>
-                <input type="phone" name="Phone" placeholder='2781673534974' required autoComplete="off"/>
+                <input type="phone" name="Phone" placeholder='+27 81 673 5344' required autoComplete="off"/>
             </div>
             <div className="form-control">
                 <label htmlFor="Phone">Message</label>
-               <textarea name="message" placeholder='Your message'></textarea>
+               <textarea name="message" placeholder='Your message' required ></textarea>
             </div>
             <div className="form-btn">
                 <button type='submit'>Send Message</button>
