@@ -164,7 +164,7 @@ const Pricing = () => {
                 </ul>
             </div> 
 
-            <div className="p-card">
+                      <div className="p-card">
                 <h4>28 hours per month</h4>
                 <p className='price-text'>
                     <span className='highlighted'>

@@ -31,8 +31,8 @@ const Services = () => {
            </div>
 
            <div className="service-box">
-             <h4>12 months Cash Flows and Profit Forecasts</h4>
-             <p>Gain valuable insights with our detailed 12-month Forecast and Budget breakdown, covering Cash Flow, Profit and Loss, and Balance Sheet projections on a monthly basis. This analysis is expertly crafted for easy presentation to stakeholders or your bank manager, empowering you with the financial data you need for informed decision-making and effective communication.</p>
+             <h4>Payroll Services </h4>
+             <p>Starting from 16 hours per month, our payroll services offer a comprehensive range of processing and management options. Choose from employee salary processing, tax and statutory deductions, payslip generation, UIF and PAYE submissions, leave management, overtime calculations, employee benefits administration, and payroll reporting. Our services ensure accurate and timely payroll management, allowing you to focus on growing your business while we handle the complexities of payroll compliance.</p>
              <div className="number">
                 <p>3</p>
             </div>
@@ -77,6 +77,15 @@ const Services = () => {
                 <p>8</p>
             </div>
            </div> 
+
+
+           <div className="service-box">
+             <h4>12 months Cash Flows and Profit Forecasts</h4>
+             <p>Gain valuable insights with our detailed 12-month Forecast and Budget breakdown, covering Cash Flow, Profit and Loss, and Balance Sheet projections on a monthly basis. This analysis is expertly crafted for easy presentation to stakeholders or your bank manager, empowering you with the financial data you need for informed decision-making and effective communication.</p>
+             <div className="number">
+                <p>9</p>
+            </div>
+           </div>
 
 
         </div>
