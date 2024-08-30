@@ -14,7 +14,7 @@ footer {
 }
 
 .footer-logo p {
-    color: #dededee1; 
+    color: #ffffffe1; 
     margin-top: 0.7rem;
     font-weight: normal;
     font-size: 1.1rem;
@@ -27,7 +27,7 @@ footer {
 }
 
 .footer-links li a{
-    color: #dededee1;
+    color: #ffffffe1;
     font-size: 1rem;
     transition: font-size 0.6s ease, color 0.6s ease;
     letter-spacing: 1px;
@@ -45,7 +45,7 @@ footer {
 }
 
 footer h4 {
-    color: #e6e6e6e1;
+    color: #ffffffe1;
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 0.6rem;
@@ -58,9 +58,9 @@ footer h4 {
 }
 
 .ctc-links a {
-    color: #dededee1;
+    color: #ffffffe1;
     letter-spacing: 1px;
-    border: 1px solid  #dededee1;
+    border: 1px solid  #ffffffe1;
     width: fit-content;
     padding: 0.46rem 1rem;
     border-radius: 4rem;
@@ -100,31 +100,23 @@ footer h4 {
 
 @media only screen and (max-width: 600px) {
     footer {
-        padding: 1rem;
+        padding: 1.4rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 1.5rem;
-        align-items: center;
     }  
 
-    .footer-logo,
+.footer-logo,
    .footer-links{
         display: flex;
-        align-items: center;
         flex-direction: column;
         font-size: 1.2rem;
-    }
-    .footer-logo img {
-        width: 110px;
-        display: block;
-        margin-top: -0.7rem;
     }
 
     .footer-logo p {
         line-height: 1.3rem;
-        text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: 300;
     }
 
     footer ul {
@@ -132,12 +124,19 @@ footer h4 {
         text-align: center;
     }
 
-    .footer-links,
+    /* .footer-links,
     .footer-logo {
         width: 40vw;
-    }
-    .ft {
-        width: 40vw;  
+       
+    } */
+    /* .ft {
+        width: 40vw;
+        border: 3px solid yellow;  
+    } */
+
+    .ft-nav {
+        width: 40vw; 
+        align-items: start;  
     }
 
     .ft-socials {
@@ -153,19 +152,16 @@ footer h4 {
     }
   
     .ft-icons {
-        width: 40vw;
+        width: 100vw;
     }
 
     .ft-icons h4 {
         margin-bottom: 0.7rem;
     }
 
-    .ctc-links {
-        margin-top: 0.5rem;
-       position: relative;
-       display: flex;
-       align-items: center;
-       justify-content: center;
+    .ft {
+         display: flex;
+         align-items: end;
     }
 
     .ctc-icon {
@@ -177,6 +173,8 @@ footer h4 {
 
     .footer-links li{
       margin: 0.2rem;
+      font-size: 1.4rem;
+      color: red !important;
     }
     .social-icon li a{
         font-size: 1.4rem;

@@ -13,10 +13,6 @@ nav {
     box-sizing: border-box;
     z-index: 2000;
 }
-.logo-container img {
-    display: block;
-    width: 100px;
-}
 
 
 .nav-item-list,
@@ -182,6 +178,14 @@ nav {
      .dropdown-contactbtn {
         width: 4.6rem;
     }
+
+    .logo-container h2,
+.footer-logo h2 {
+    color: #dcdcdc;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.3rem;
+}
      
     
   }

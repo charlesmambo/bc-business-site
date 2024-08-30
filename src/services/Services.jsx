@@ -32,7 +32,7 @@ const Services = () => {
 
            <div className="service-box">
              <h4>Payroll Services </h4>
-             <p>Starting from 16 hours per month, our payroll services offer a comprehensive range of processing and management options. Choose from employee salary processing, tax and statutory deductions, payslip generation, UIF and PAYE submissions, leave management, overtime calculations, employee benefits administration, and payroll reporting. Our services ensure accurate and timely payroll management, allowing you to focus on growing your business while we handle the complexities of payroll compliance.</p>
+             <p>Starting from 16 hours per month, our payroll services offer a comprehensive range of processing and management options. Choose from employee salary processing, tax and statutory deductions, payslip generation, UIF and PAYE submissions, leave management, overtime calculations, employee benefits administration, and payroll reporting. Our services ensure accurate and timely payroll management, allowing you to focus on growing your business while we handle the complexities of payroll compliancegit .</p>
              <div className="number">
                 <p>3</p>
             </div>

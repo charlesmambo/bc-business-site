@@ -4,8 +4,7 @@ import Logo from '../../assets/logo.svg';
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
-import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { Link, useNavigate } from 'react-router-dom';
+import { IoIosArrowDroprightCircle } from "react-icons/io"; import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
     const [activeLink, setActiveLink] = useState('');
@@ -20,7 +19,7 @@ const Footer = () => {
             <h2>Kariwo Bookkeeping Services</h2>
             <p>Accountant-Led Bookkeeping <br />To Elevate Your Business</p>
         </div>
-        <ul className='footer-links'>
+        <ul className='footer-links ft-nav'>
              <h4>
                 Navigate
             </h4>
@@ -53,21 +52,7 @@ const Footer = () => {
               </li>
         </ul>
 
-        {/* <ul className='ft ft-socials'>
-            <h4>
-                Get in touch
-            </h4>
-         
-            <li  className='ctc-links'>
-                <Link
-                to="/request"
-                className={`contant-link ${activeLink === 'request' ? 'active' : ''}`}
-                onClick={() => handleLinkClick('request')}
-              >
-                    Request Quote
-                    </Link>
-            </li>
-        </ul> */}
+  
         <ul className='footer-links ft'>
             <h4>
             Legal
