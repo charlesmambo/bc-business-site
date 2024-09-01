@@ -1,30 +1,37 @@
 import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
 import '../contact/Contact.css';
 import Footer from '../components/footer/Footer';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form1 = useRef();
   const [showSuccess, setShowSuccess] = useState(false);
+      const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_w1ezcgj', 'template_ulbhjsf', form1.current, {
+            publicKey: '5avLyIcJgjZw9YL8G',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+              setShowSuccess(true);
+              form1.current.reset();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+              setTimeout(() => {
+                    setShowSuccess(false);
+                  }, 3000);
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+              alert('Error sending email. Please try again.');
+            },
+          );
 
-    emailjs.sendForm('service_y2q5yah', 'template_nlf5esy', form1.current, 'mXQbLhq7JTLs0tFp7')
-      .then((result) => {
-        setShowSuccess(true); // Show success message
-        form1.current.reset(); // Reset the form after submission
+          e.target.reset();
+      };
 
-        // Hide the success message after 3 seconds
-        setTimeout(() => {
-          setShowSuccess(false);
-        }, 3000);
-      })
-      .catch((error) => {
-        alert('Error sending email. Please try again.');
-        console.error('Email sending error:', error);
-      });
-  };
 
   return (
     <>
@@ -47,22 +54,22 @@ const Contact = () => {
           </div>
         </div>
 
-        <form ref={form1} onSubmit={handleSubmit}>
+        <form ref={form1} onSubmit={sendEmail}>
           <div className="form-control">
             <label htmlFor="fullName">Name</label>
-            <input type="text" name="name" placeholder='Full Name' autoComplete="off" required  />
+            <input type="text" name="user_name" placeholder='Full Name' autoComplete="off" required  />
           </div>
           <div className="form-control">
             <label htmlFor="Email">Email</label>
-            <input type="email" name="email" placeholder='example@gmail.com' required={true} autoComplete="off" />
+            <input type="email" name="user_email" placeholder='example@gmail.com' required={true} autoComplete="off" />
           </div>
           <div className="form-control">
             <label htmlFor="Phone">Phone</label>
-            <input type="tel" name="phone" placeholder='+27 81 673 5344' required autoComplete="off" />
+            <input type="tel" name="user_phone" placeholder='+27 81 673 5344' required autoComplete="off" />
           </div>
           <div className="form-control">
             <label htmlFor="Message">Message</label>
-            <textarea name="message" placeholder='Your message' required ></textarea>
+            <textarea name="user_message" placeholder='Your message' required ></textarea>
           </div>
           <div className="form-btn">
             <button type='submit'>Send Message</button>

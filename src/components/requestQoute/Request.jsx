@@ -1,9 +1,39 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
 import Footer from '../footer/Footer';
 import { RiSendToBack } from "react-icons/ri";
-import '../requestQoute/Request.css'
+import '../requestQoute/Request.css';
+import emailjs from '@emailjs/browser';
 
 const Request = () => {
+    const form2 = useRef();
+    const [showSuccess, setShowSuccess] = useState(false);
+
+        const sendEmail = (e) => {
+          e.preventDefault();
+      
+          emailjs
+            .sendForm('service_6pj5tlt', 'template_8fjd8nd', form2.current, {
+              publicKey: 'mXQbLhq7JTLs0tFp7',
+            })
+            .then(
+              () => {
+                console.log('SUCCESS!');
+                setShowSuccess(true);
+                form2.current.reset();
+  
+                setTimeout(() => {
+                      setShowSuccess(false);
+                    }, 3000);
+              },
+              (error) => {
+                console.log('FAILED...', error.text);
+                alert('Error sending email. Please try again.');
+              },
+            );
+  
+            e.target.reset();
+        };
+  
   return (
     <div className='request'>
             <div className='contact-container'>
@@ -18,27 +48,33 @@ const Request = () => {
         </div>
        </div>
 
-       <form>
+       <form ref={form2} onSubmit={sendEmail}>
             <div className="form-control">
                 <label htmlFor="fullName">Name</label>
-                <input type="text" name="Name" placeholder='Full Name' required autoComplete="off"/>
+                <input type="text" name="user_name" placeholder='Full Name' required autoComplete="off"/>
             </div>
             <div className="form-control">
                 <label htmlFor="Email">Email</label>
-                <input type="text" name="Email" placeholder='example@gmail.com' required autoComplete="off"/>
+                <input type="text" name="user_email" placeholder='example@gmail.com' required autoComplete="off"/>
             </div>
             <div className="form-control">
                 <label htmlFor="Phone">Phone</label>
-                <input type="phone" name="Phone" placeholder='+27 81 673 5344' required autoComplete="off"/>
+                <input type="phone" name="user_phone" placeholder='+27 81 673 5344' required autoComplete="off"/>
             </div>
             <div className="form-control">
                 <label htmlFor="Phone">Message</label>
-               <textarea name="message" placeholder='Your message' required ></textarea>
+               <textarea name="user_message" placeholder='Your message' required ></textarea>
             </div>
             <div className="form-btn">
                 <button type='submit'>Send Message</button>
             </div>
         </form>
+
+        {showSuccess && (
+          <div className="success-box ctc-success-box" aria-live="polite">
+            <p>Thank you! Your message has been sent!</p>
+          </div>
+        )}
     </div>
     <Footer />
     </div>

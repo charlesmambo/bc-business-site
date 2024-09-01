@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import '../header/Header.css';
 import ProfileImg from '../../assets/img.jpg';
 import { FaPlus, FaMinus } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
 
 const Header = () => {
   const [services, setServices] = useState([
@@ -28,22 +29,30 @@ const Header = () => {
     setEmailValid(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(value));
   };
 
-  const handleSubmit = (e) => {
+  const form = useRef();
+  const sendEmail = (e) => {
     e.preventDefault();
+
     if (emailValid) {
       setIsSubmitting(true);
 
-      // Simulate request submission
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setShowSuccess(true);
-        setEmail(''); // Reset email input
+      emailjs
+        .sendForm('service_6pj5tlt', 'template_8fjd8nd', form.current, 'mXQbLhq7JTLs0tFp7')
+        .then(() => {
+          setIsSubmitting(false);
+          setShowSuccess(true);
+          setEmail(''); // Reset email input
+          form.current.reset();
 
-        // Show success message for 10 seconds
-        setTimeout(() => {
-          setShowSuccess(false);
-        }, 2000);
-      }, 1000);
+          // Show success message for 3 seconds
+          setTimeout(() => {
+            setShowSuccess(false);
+          }, 3000);
+        })
+        .catch((error) => {
+          console.log('Failed to send email:', error);
+          setIsSubmitting(false);
+        });
     } else {
       // Optionally display an error message or handle invalid email case
       console.log('Invalid email');
@@ -75,11 +84,10 @@ const Header = () => {
             </div>
           ))}
         </div>
-        <form className='contact-form' onSubmit={handleSubmit}
-        action={`mailto:chylah11st@gmail.com?subject=Request%20Quote&body=${encodeURIComponent(email)}`} method="get" encType="text/plain">
+        <form className='contact-form' ref={form} onSubmit={sendEmail}>
           <input 
             type="text" 
-            name="email" 
+            name="user_email" 
             placeholder='Enter your email' 
             value={email} 
             onChange={handleEmailChange} 
