@@ -12,8 +12,8 @@ const Request = () => {
           e.preventDefault();
       
           emailjs
-            .sendForm('service_6pj5tlt', 'template_8fjd8nd', form2.current, {
-              publicKey: 'mXQbLhq7JTLs0tFp7',
+          .sendForm('service_h0nvism', 'template_67kvykq', form2.current, {
+            publicKey: '2tEK2tuXt2FPqc5KF',
             })
             .then(
               () => {

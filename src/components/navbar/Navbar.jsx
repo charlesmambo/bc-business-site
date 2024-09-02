@@ -134,8 +134,8 @@ const Navbar = ({ scrollToAbout }) => {
   );
 };
 
-Navbar.propTypes = {
-  scrollToAbout: PropTypes.func.isRequired,
-};
+// Navbar.propTypes = {
+//   scrollToAbout: PropTypes.func.isRequired,
+// };
 
 export default Navbar;
