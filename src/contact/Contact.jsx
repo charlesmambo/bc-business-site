@@ -10,8 +10,8 @@ const Contact = () => {
         e.preventDefault();
     
         emailjs
-          .sendForm('service_w1ezcgj', 'template_ulbhjsf', form1.current, {
-            publicKey: '5avLyIcJgjZw9YL8G',
+          .sendForm('service_h0nvism', 'template_67kvykq', form1.current, {
+            publicKey: '2tEK2tuXt2FPqc5KF',
           })
           .then(
             () => {
@@ -42,7 +42,7 @@ const Contact = () => {
 
           <div className="contact-details">
             <h4>Contact</h4>
-            <p>kariwobookkeeping@books.com</p>
+            <p>bookkeeper@kariwo.co.za</p>
             <p>+27 72 260 7628</p>
           </div>
 
